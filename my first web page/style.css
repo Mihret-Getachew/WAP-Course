@@ -1,0 +1,198 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  height: 80px;
+  background-color: palevioletred;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+
+  width: 35%;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 10%;
+
+  
+}
+nav img {
+  width: 45px;
+}
+.name {
+  text-transform: capitalize;
+  font-size: 28px;
+  font-family: cursive;
+}
+.service,
+.about,
+.login,
+.register {
+  font-size: 20px;
+}
+.paragraph {
+  text-align: center;
+  margin-top: 2%;
+}
+.line {
+  padding-bottom: 2%;
+}
+.title {
+  margin-bottom: 2%;
+}
+.ser {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  gap: 1.8%;
+}
+.ab {
+  border: 1px solid palevioletred;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: palevioletred;
+}
+.sr {
+  background-color: palevioletred;
+  padding: 10px 24px;
+  font-size: 18px;
+}
+.final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.good,
+.taste,
+.grade {
+  text-align: center;
+}
+.smile,
+.sweet,
+.year {
+  margin-bottom: 12px;
+  margin-top: 4px;
+  text-transform: capitalize;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.perfume {
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 2%;
+}
+.fotter-left,
+.fotter-center,
+.fotter-right {
+  width: 33.33%;
+}
+.image {
+  width: 10px;
+  height: 10px;
+}
+.ending {
+  padding-top: 1.2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 10%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: azure;
+}
+
+.fotter-center,
+.fotter-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topic {
+  font-size: larger;
+  text-transform: capitalize;
+  padding-bottom: 1%;
+}
+@media screen and (min-width:951px) and (max-width:1162px){
+  .good,.taste,.grade{
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+  .right{
+    width: 15%;
+  }
+} 
+@media screen and (max-width:951px) and (min-width:570px){
+  .final{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .right{
+    width: 22%;
+  }
+  
+}
+
+@media screen and (max-width:570px) {
+  .final{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .right{
+    width: 25%;
+  }
+  .nav{
+    font-size: small;
+  }
+  
+}
+.facebook{
+  width: 20px;
+  height: 20px;
+  background-image: url("img/facebook.png");background-position: center;
+}
+.instagram{
+  width: 20px;
+  height: 20px;
+  background-image: url("img/instagram.png");background-position: center;
+}
+.twitter{
+  width: 20px;
+  height: 20px;
+  background-image: url("img/twitter.png");background-position: center;
+}
+.picture{
+  margin-top: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.ab:hover{
+  background-color: palevioletred;
+  color: white;
+}
