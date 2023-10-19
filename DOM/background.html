@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="paragraph">WElcome to ethiopia</p>
+    <br />
+    <button onclick="red();">Red</button>
+    <button onclick="yellow();">yellow</button>
+    <button onclick="Green();">Green</button>
+    <script>
+      function red() {
+        document.querySelector("#paragraph").style.background = "red";
+      }
+      function yellow() {
+        document.getElementById("paragraph").style.background = "yellow";
+      }
+      function Green() {
+        document.querySelector("p").style.background = "Green";
+      }
+    </script>
+  </body>
+</html>
