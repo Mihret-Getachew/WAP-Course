@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="beki">
+      <li>abebe</li>
+      <li>kebede</li>
+      <li>bikilla</li>
+    </ul>
+    <ul>
+      <li>werku</li>
+      <li>beso</li>
+      <li>gelu</li>
+    </ul>
+    <p id="paragraph"></p>
+    <button onclick="clickme();">clickme</button>
+    <script>
+      function clickme() {
+        let lists = document.querySelectorAll("ul>li");
+        let names = "";
+        for (let elem of lists) {
+          names += elem.innerHTML + " ";
+        }
+        document.getElementById("paragraph").innerHTML = names;
+        let first = document.createElement("li");
+        let parent = document.getElementById("beki");
+        first.innerHTML = "beki";
+        parent.append(first);
+      }
+    </script>
+  </body>
+</html>

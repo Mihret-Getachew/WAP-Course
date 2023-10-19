@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="num" />
+
+    <button id="showButton" onclick="onShowMeButtonClick()">add Me</button>
+
+    <ul class="displayArea" name="displayArea"></ul>
+
+    <div class="elementToRemove">This Element will be removed</div>
+
+    <button onclick="removeElement()">Remove</button>
+    <script>
+      function onShowMeButtonClick() {
+        let num = document.getElementById("num").value;
+
+        let lione = document.createElement("li");
+        lione.innerText = num;
+
+        let displayArea = document.getElementsByClassName("displayArea")[0];
+        displayArea.prepend(lione);
+      }
+
+      function removeElement() {
+        let elementToBeRemoved =
+          document.getElementsByClassName("elementToRemove")[0];
+        elementToBeRemoved.remove();
+      }
+    </script>
+  </body>
+</html>

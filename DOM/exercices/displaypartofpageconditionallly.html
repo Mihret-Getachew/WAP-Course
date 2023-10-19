@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display part of page conditionally</title>
+  </head>
+
+  <style>
+    #option1,
+    #option2 {
+      display: none;
+    }
+  </style>
+  <body>
+    <label>scriptures</label>
+    <select id="seclector">
+      <option value="vedas">vedas</option>
+      <option value="upanishads">upanishads</option>
+    </select>
+    <button onclick="handleclick1()">show</button><br />
+    <div id="option1">
+      <input type="checkbox" />Rig <input type="checkbox" />Yajur
+      <input type="checkbox" />Adarvana <input type="checkbox" />Sama
+    </div>
+    <div id="option2">
+      <input type="checkbox" />aiterya <input type="checkbox" />chicaago
+      <input type="checkbox" />Brihndarankya <input type="checkbox" />ethiopia
+    </div>
+
+    <hr />
+    <button>submit</button>
+    <script>
+      function handleclick1() {
+        let option1 = document.getElementById("option1");
+        let option2 = document.getElementById("option2");
+
+        let selector = document.getElementById("seclector").value;
+
+        if (selector == "vedas") {
+          option2.style.display = "none";
+          option1.style.display = "block";
+        } else if (selector == "upanishads") {
+          option1.style.display = "none";
+          option2.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

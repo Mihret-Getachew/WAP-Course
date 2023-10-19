@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create/sort/deete image cards</title>
+  </head>
+  <body>
+    <button onclick="sort()">sort</button>
+    <br />
+    <div id="section1">
+      <img src="./bag.png" width="100px" height="100px" />
+      <label>Maharishi</label>
+      <label>Mahesh</label>
+      <button onclick="delete1()">delete</button>
+    </div>
+    <div id="section2">
+      <img src="./bag.png" width="100px" height="100px" />
+      <label>john</label>
+      <label>Doe</label>
+      <button onclick="delete2()">delete</button>
+    </div>
+    <script>
+      function delete2() {
+        let section2 = document.getElementById("section2");
+
+        section2.style.opacity = 0;
+      }
+      function delete1() {
+        let section1 = document.getElementById("section1");
+
+        section1.style.opacity = 0;
+      }
+      function sort() {
+        section1.style.opacity = 100;
+        section2.style.opacity = 100;
+      }
+    </script>
+  </body>
+</html>

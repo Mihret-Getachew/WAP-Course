@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Styles/Classes Conditionally</title>
+  </head>
+  <body>
+    <select id="option">
+      <option value="dark">dark</option>
+      <option value="light">light</option>
+    </select>
+    <div class="para">bananas are yellow in color</div>
+    <button onclick="clickme()">submit</button>
+    <script>
+      function clickme() {
+        let selectedTeam = document.getElementById("option").value;
+        if (selectedTeam == "dark") {
+          document.getElementsByClassName("para")[0].style.backgroundColor =
+            "black";
+          document.getElementsByClassName("para")[0].style.color = "white";
+        } else {
+          document.getElementsByClassName("para")[0].style.backgroundColor =
+            "yellow";
+          document.getElementsByClassName("para")[0].style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

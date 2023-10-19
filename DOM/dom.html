@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="class1" type="text" />
+    <button onclick="handclick();">add me</button>
+    <ul class="todo"></ul>
+
+    <script>
+      function handclick() {
+        let inputValue = document.querySelector("#class1");
+        console.log(inputValue.value);
+        let unorderedList = document.getElementsByClassName("todo")[0];
+
+        let newElement = document.createElement("li");
+        newElement.innerHTML = inputValue.value;
+
+        unorderedList.append(newElement);
+        inputValue.value = "";
+      }
+    </script>
+  </body>
+</html>

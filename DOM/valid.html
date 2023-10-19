@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>first name</label>
+    <input id="fname" type="text" />
+    <label>Last name</label>
+    <input id="lname" type="text" />
+    <button onclick="clickme();">update</button>
+    <br />
+    <p id="fullname"></p>
+    <script>
+      function clickme() {
+        let fname = document.getElementById("fname").value;
+        let lname = document.getElementById("lname").value;
+        document.getElementById("fullname").innerHTML = fname + " " + lname;
+      }
+    </script>
+  </body>
+</html>

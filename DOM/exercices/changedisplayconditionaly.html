@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change display conditionally</title>
+  </head>
+  <body>
+    <p>display</p>
+    <br />
+    <p id="para">bananas are yellow in color</p>
+    <button onclick="handleclick1()">submit</button><br />
+    <div>Visibility</div>
+    <br />
+    <input id="para2" type="text" /><button onclick="handclick2()">
+      submit
+    </button>
+    <script>
+      function handleclick1() {
+        let para = document.getElementById("para");
+
+        if (para.style.display == "none") {
+          para.style.display = "block";
+        } else {
+          para.style.display = "none";
+        }
+      }
+      function handclick2() {
+        let para2 = document.getElementById("para2");
+        if (para2.style.opacity == 0) {
+          para2.style.opacity = 100;
+        } else {
+          para2.style.opacity = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
